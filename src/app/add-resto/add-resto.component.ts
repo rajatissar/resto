@@ -9,7 +9,7 @@ import { RestoService } from '../resto.service';
   styleUrls: ['./add-resto.component.css']
 })
 export class AddRestoComponent implements OnInit {
-
+  isAlert = false;
   addRestaurantForm = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.minLength(4)]),
     address: new FormControl('', [Validators.required, Validators.minLength(4)]),
@@ -37,6 +37,12 @@ export class AddRestoComponent implements OnInit {
     const formData = this.addRestaurantForm.value;
     this.resto.addRestaurants(formData).subscribe((result) => {
       // console.log('addRestaurant -> result ->>', result);
+      this.addRestaurantForm.reset({});
+      this.isAlert = true;
     });
+  }
+
+  closeAlert() {
+    this.isAlert = false;
   }
 }
