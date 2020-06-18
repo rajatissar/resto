@@ -16,4 +16,8 @@ export class RestoService {
   addRestaurants(body) {
     return this.http.post<[]>(this.url, body);
   }
+
+  deleteRestaurant(id) {
+    return this.http.delete<[]>(`${this.url}/${id}`);
+  }
 }

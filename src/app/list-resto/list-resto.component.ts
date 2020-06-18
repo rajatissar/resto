@@ -18,4 +18,9 @@ export class ListRestoComponent implements OnInit {
       });
   }
 
+  deleteRestaurant(id) {
+    this.restaurants.splice(id - 1, 1);
+    this.resto.deleteRestaurant(id)
+      .subscribe((restaurants) => { });
+  }
 }

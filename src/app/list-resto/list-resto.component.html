@@ -5,6 +5,8 @@
             <th scope="col">Name</th>
             <th scope="col">Address</th>
             <th scope="col">Email</th>
+            <th scope="col">Delete</th>
+
         </tr>
     </thead>
     <tbody>
@@ -13,6 +15,8 @@
             <td>{{restaurant.name}}</td>
             <td>{{restaurant.address}}</td>
             <td>{{restaurant.email}}</td>
+            <td><i (click)="deleteRestaurant(restaurant.id)" class="fa fa-trash" aria-hidden="true" style="font-size: 15px;color:red"></i>
+            </td>
         </tr>
     </tbody>
 </table>
