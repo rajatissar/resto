@@ -1,9 +1,35 @@
-<ul>
-    <li routerLink="add">Add Restronent</li>
-    <li routerLink="update">Update Restronent</li>
-    <li routerLink="list">List Restronent</li>
-    <li routerLink="register">Register user</li>
-    <li routerLink="login">Login user</li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Resto</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" routerLink="add">Add Restronent</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="update">Update Restronent</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="list">List Restronent</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="register">Register User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="login">Login User</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+        </ul>
+    </div>
+</nav>
 
-<router-outlet></router-outlet>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
