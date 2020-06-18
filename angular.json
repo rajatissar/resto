@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "resto"
+    }
+  },
+  "defaultProject": "resto",
+  "cli": {
+    "analytics": false
+  }
 }
