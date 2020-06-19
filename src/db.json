@@ -1,0 +1,33 @@
+{
+    "restaurants": [{
+            "id": 1,
+            "name": "Restaurant 1",
+            "address": "Ambala",
+            "email": "restaurant1@test.com"
+        },
+        {
+            "id": 2,
+            "name": "Restaurant 2",
+            "address": "Karnal",
+            "email": "restaurant3@test.com"
+        },
+        {
+            "id": 3,
+            "name": "Restaurant 3",
+            "address": "Hisar",
+            "email": "restaurant3@test.com"
+        },
+        {
+            "id": 4,
+            "name": "Restaurant 4",
+            "address": "Rohtak",
+            "email": "restaurant4@test.com"
+        },
+        {
+            "id": 5,
+            "name": "Restaurant 5",
+            "address": "Sonipat",
+            "email": "restaurant5@test.com"
+        }
+    ]
+}
