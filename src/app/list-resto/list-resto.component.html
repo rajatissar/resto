@@ -6,7 +6,7 @@
             <th scope="col">Address</th>
             <th scope="col">Email</th>
             <th scope="col">Delete</th>
-
+            <th scope="col">Update</th>
         </tr>
     </thead>
     <tbody>
@@ -15,7 +15,11 @@
             <td>{{restaurant.name}}</td>
             <td>{{restaurant.address}}</td>
             <td>{{restaurant.email}}</td>
-            <td><i (click)="deleteRestaurant(restaurant.id)" class="fa fa-trash" aria-hidden="true" style="font-size: 15px;color:red"></i>
+            <td>
+                <i (click)="deleteRestaurant(restaurant.id)" class="fa fa-trash" aria-hidden="true" style="font-size: 15px;color:red"></i>
+            </td>
+            <td>
+                <i routerLink="/update/{{restaurant.id}}" class="fa fa-edit" aria-hidden="true" style="font-size: 15px;color:black"></i>
             </td>
         </tr>
     </tbody>

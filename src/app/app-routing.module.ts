@@ -17,7 +17,7 @@ const routes: Routes = [
     component: ListRestoComponent
   },
   {
-    path: 'update',
+    path: 'update/:id',
     component: UpdateRestoComponent
   },
   {
