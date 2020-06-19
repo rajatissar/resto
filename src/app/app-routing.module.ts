@@ -9,6 +9,10 @@ import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: ListRestoComponent
+  },
+  {
     path: 'add',
     component: AddRestoComponent
   },
