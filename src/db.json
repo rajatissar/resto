@@ -28,6 +28,12 @@
             "name": "Restaurant 5",
             "address": "Sonipat",
             "email": "restaurant5@test.com"
+        },
+        {
+            "name": "Restaurant 6",
+            "address": "Delhi",
+            "email": "restaurant6@test.com",
+            "id": 6
         }
     ]
 }

@@ -9,8 +9,8 @@ export class RestoService {
 
   constructor(private http: HttpClient) { }
 
-  getRestaurants() {
-    return this.http.get<[]>(this.url);
+  getRestaurants(path) {
+    return this.http.get<[]>(`${this.url}${path ? `/${path}` : ''}`);
   }
 
   getRestaurant(id) {

@@ -8,11 +8,17 @@ import { RestoService } from '../resto.service';
 })
 export class ListRestoComponent implements OnInit {
   restaurants: [];
+  length = '100';
+  pageSize = '5';
+  pageSizeOptions = [5, 10, 25, 100];
 
   constructor(private resto: RestoService) { }
 
   ngOnInit(): void {
-    this.resto.getRestaurants()
+    const begin = 0;
+    const end = this.pageSize;
+    const path = `?_start=${begin}&_end=${end}`;
+    this.resto.getRestaurants(path)
       .subscribe((restaurants) => {
         this.restaurants = restaurants;
       });
@@ -22,5 +28,15 @@ export class ListRestoComponent implements OnInit {
     this.restaurants.splice(id - 1, 1);
     this.resto.deleteRestaurant(id)
       .subscribe((restaurants) => { });
+  }
+
+  handlePage(event) {
+    const begin = event.pageSize * event.pageIndex;
+    const end = begin + event.pageSize;
+    const path = `?_start=${begin}&_end=${end}`;
+    this.resto.getRestaurants(path)
+      .subscribe((restaurants) => {
+        this.restaurants = restaurants;
+      });
   }
 }
