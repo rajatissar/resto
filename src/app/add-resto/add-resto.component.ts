@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 import { RestoService } from '../resto.service';
 
@@ -16,7 +17,7 @@ export class AddRestoComponent implements OnInit {
     email: new FormControl('', [Validators.required, Validators.minLength(4)])
   });
 
-  constructor(private resto: RestoService) { }
+  constructor(private resto: RestoService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -39,6 +40,7 @@ export class AddRestoComponent implements OnInit {
       // console.log('addRestaurant -> result ->>', result);
       this.addRestaurantForm.reset({});
       this.isAlert = true;
+      this.router.navigate(['list']); // redirects url to new component
     });
   }
 

@@ -8,7 +8,7 @@ import { RestoService } from '../resto.service';
 })
 export class ListRestoComponent implements OnInit {
   restaurants: [];
-  length = '100';
+  length = '1000';
   pageSize = '5';
   pageSizeOptions = [5, 10, 25, 100];
 
