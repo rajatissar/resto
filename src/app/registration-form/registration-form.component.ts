@@ -92,12 +92,12 @@ export class RegistrationFormComponent implements OnInit {
       value: 'India',
       options: ['India', 'UAE', 'UK', 'US']
     },
-    // {
-    //   type: 'checkbox',
-    //   label: 'Accept Terms',
-    //   name: 'term',
-    //   value: true
-    // },
+    {
+      type: 'checkbox',
+      label: 'Accept Terms',
+      name: 'term',
+      value: true
+    },
     {
       type: 'button',
       label: 'Save'

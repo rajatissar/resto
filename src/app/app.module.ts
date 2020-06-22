@@ -16,6 +16,7 @@ import { InputComponent } from './components/input/input.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SelectComponent } from './components/select/select.component';
 import { RadioButtonComponent } from './components/radio-button/radio-button.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 // modules
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +34,7 @@ import { DynamicFieldDirective } from './directives/dynamic-field.directive';
     ButtonComponent,
     SelectComponent,
     RadioButtonComponent,
+    CheckboxComponent,
     DynamicFormComponent,
     RegistrationFormComponent,
     DynamicFieldDirective,

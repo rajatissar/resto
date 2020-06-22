@@ -13,6 +13,7 @@ import { InputComponent } from '../components/input/input.component';
 import { ButtonComponent } from '../components/button/button.component';
 import { SelectComponent } from '../components/select/select.component';
 import { RadioButtonComponent } from '../components/radio-button/radio-button.component';
+import { CheckboxComponent } from '../components/checkbox/checkbox.component';
 
 const componentMapper = {
   input: InputComponent,
@@ -20,7 +21,7 @@ const componentMapper = {
   select: SelectComponent,
   // date: DateComponent,
   radiobutton: RadioButtonComponent,
-  // checkbox: CheckboxComponent
+  checkbox: CheckboxComponent
 };
 
 @Directive({
