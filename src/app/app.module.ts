@@ -4,9 +4,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatPaginatorModule } from '@angular/material/paginator';
 
+// modules
 import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './modules/material/material.module';
+// components
 import { AppComponent } from './app.component';
 import { AddRestoComponent } from './add-resto/add-resto.component';
 import { UpdateRestoComponent } from './update-resto/update-resto.component';
@@ -27,7 +29,7 @@ import { ListRestoComponent } from './list-resto/list-resto.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatPaginatorModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
