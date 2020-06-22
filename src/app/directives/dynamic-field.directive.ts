@@ -11,10 +11,15 @@ import { FormGroup } from '@angular/forms';
 import { FieldConfig } from '../interfaces/field.interface';
 import { InputComponent } from '../components/input/input.component';
 import { ButtonComponent } from '../components/button/button.component';
+import { SelectComponent } from '../components/select/select.component';
 
 const componentMapper = {
   input: InputComponent,
-  button: ButtonComponent
+  button: ButtonComponent,
+  select: SelectComponent,
+  // date: DateComponent,
+  // radiobutton: RadiobuttonComponent,
+  // checkbox: CheckboxComponent
 };
 
 @Directive({

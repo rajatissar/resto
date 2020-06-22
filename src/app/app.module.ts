@@ -14,6 +14,7 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 // generic components
 import { InputComponent } from './components/input/input.component';
 import { ButtonComponent } from './components/button/button.component';
+import { SelectComponent } from './components/select/select.component';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 // modules
 import { AppRoutingModule } from './app-routing.module';
@@ -29,6 +30,7 @@ import { DynamicFieldDirective } from './directives/dynamic-field.directive';
     ListRestoComponent,
     InputComponent,
     ButtonComponent,
+    SelectComponent,
     DynamicFormComponent,
     RegistrationFormComponent,
     DynamicFieldDirective,

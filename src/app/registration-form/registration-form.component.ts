@@ -85,13 +85,13 @@ export class RegistrationFormComponent implements OnInit {
     //     }
     //   ]
     // },
-    // {
-    //   type: 'select',
-    //   label: 'Country',
-    //   name: 'country',
-    //   value: 'UK',
-    //   options: ['India', 'UAE', 'UK', 'US']
-    // },
+    {
+      type: 'select',
+      label: 'Country',
+      name: 'country',
+      value: 'India',
+      options: ['India', 'UAE', 'UK', 'US']
+    },
     // {
     //   type: 'checkbox',
     //   label: 'Accept Terms',
