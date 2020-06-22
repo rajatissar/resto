@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+
 import { AddRestoComponent } from './add-resto/add-resto.component';
 import { ListRestoComponent } from './list-resto/list-resto.component';
 import { UpdateRestoComponent } from './update-resto/update-resto.component';
-
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'update/:id',
     component: UpdateRestoComponent
+  },
+  {
+    path: 'register',
+    component: RegistrationFormComponent
   }
 ];
 

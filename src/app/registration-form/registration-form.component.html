@@ -1,0 +1,13 @@
+<div class="form">
+    <div style="text-align:center">
+        <h1>
+            Registration Form
+        </h1>
+    </div>
+    <app-dynamic-form [fields]="regConfig" (submitFunction)="submit($event)">
+    </app-dynamic-form>
+    <div class="margin-top">
+        <!-- {{ form.value | json }} -->
+        <!-- {{ regConfig | json }} -->
+    </div>
+</div>
