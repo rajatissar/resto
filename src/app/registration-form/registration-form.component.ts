@@ -66,13 +66,13 @@ export class RegistrationFormComponent implements OnInit {
         }
       ]
     },
-    // {
-    //   type: 'radiobutton',
-    //   label: 'Gender',
-    //   name: 'gender',
-    //   options: ['Male', 'Female'],
-    //   value: 'Male'
-    // },
+    {
+      type: 'radiobutton',
+      label: 'Gender',
+      name: 'gender',
+      options: ['Male', 'Female'],
+      value: 'Male'
+    },
     // {
     //   type: 'date',
     //   label: 'DOB',

@@ -12,13 +12,14 @@ import { FieldConfig } from '../interfaces/field.interface';
 import { InputComponent } from '../components/input/input.component';
 import { ButtonComponent } from '../components/button/button.component';
 import { SelectComponent } from '../components/select/select.component';
+import { RadioButtonComponent } from '../components/radio-button/radio-button.component';
 
 const componentMapper = {
   input: InputComponent,
   button: ButtonComponent,
   select: SelectComponent,
   // date: DateComponent,
-  // radiobutton: RadiobuttonComponent,
+  radiobutton: RadioButtonComponent,
   // checkbox: CheckboxComponent
 };
 
