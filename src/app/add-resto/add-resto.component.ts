@@ -9,6 +9,7 @@ import { RestoService } from '../resto.service';
   templateUrl: './add-resto.component.html',
   styleUrls: ['./add-resto.component.css']
 })
+
 export class AddRestoComponent implements OnInit {
   isAlert = false;
   addRestaurantForm = new FormGroup({
