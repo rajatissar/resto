@@ -73,18 +73,18 @@ export class RegistrationFormComponent implements OnInit {
       options: ['Male', 'Female'],
       value: 'Male'
     },
-    // {
-    //   type: 'date',
-    //   label: 'DOB',
-    //   name: 'dob',
-    //   validations: [
-    //     {
-    //       name: 'required',
-    //       validator: Validators.required,
-    //       message: 'Date of Birth Required'
-    //     }
-    //   ]
-    // },
+    {
+      type: 'date',
+      label: 'DOB',
+      name: 'dob',
+      validations: [
+        {
+          name: 'required',
+          validator: Validators.required,
+          message: 'Date of Birth Required'
+        }
+      ]
+    },
     {
       type: 'select',
       label: 'Country',

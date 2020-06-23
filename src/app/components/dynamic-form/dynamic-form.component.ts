@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import moment from 'moment';
 
 import { FieldConfig } from '../../interfaces/field.interface';
 
@@ -31,6 +32,14 @@ export class DynamicFormComponent implements OnInit {
   onSubmit(event: Event) {
     event.preventDefault();
     event.stopPropagation();
+
+    // convert moment object to time string
+    Object.keys(this.form.value).forEach((val) => {
+      if (moment.isMoment(this.form.value[val])) {
+        this.form.value[val] = JSON.parse(JSON.stringify(this.form.value[val]));
+      }
+    });
+
     if (this.form.valid) {
       this.submitFunction.emit(this.form.value);
     } else {

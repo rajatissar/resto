@@ -9,7 +9,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 // import { MatNativeDateModule } from '@angular/material/native-date';
-// import { MatMomentDateModule } from '@angular/material/moment-date';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { MatSelectModule } from '@angular/material/select';
 // import { MatOptionModule } from '@angular/material/option';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -28,7 +28,7 @@ import { MatRadioModule } from '@angular/material/radio';
     MatListModule,
     MatDatepickerModule,
     // MatNativeDateModule,
-    // MatMomentDateModule,
+    MatMomentDateModule,
     MatSelectModule,
     // MatOptionModule,
     MatCheckboxModule,
@@ -44,7 +44,7 @@ import { MatRadioModule } from '@angular/material/radio';
     MatListModule,
     MatDatepickerModule,
     // MatNativeDateModule,
-    // MatMomentDateModule,
+    MatMomentDateModule,
     MatSelectModule,
     // MatOptionModule,
     MatCheckboxModule,

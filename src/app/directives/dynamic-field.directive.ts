@@ -14,12 +14,13 @@ import { ButtonComponent } from '../components/button/button.component';
 import { SelectComponent } from '../components/select/select.component';
 import { RadioButtonComponent } from '../components/radio-button/radio-button.component';
 import { CheckboxComponent } from '../components/checkbox/checkbox.component';
+import { DateComponent } from '../components/date/date.component';
 
 const componentMapper = {
   input: InputComponent,
   button: ButtonComponent,
   select: SelectComponent,
-  // date: DateComponent,
+  date: DateComponent,
   radiobutton: RadioButtonComponent,
   checkbox: CheckboxComponent
 };
