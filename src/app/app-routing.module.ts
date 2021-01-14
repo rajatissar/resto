@@ -23,10 +23,10 @@ const routes: Routes = [
     path: 'update/:id',
     component: UpdateRestoComponent
   },
-  {
-    path: 'register',
-    component: RegistrationFormComponent
-  }
+  // {
+  //   path: 'register',
+  //   component: RegistrationFormComponent
+  // }
 ];
 
 @NgModule({
