@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class RestoService {
-  url = `http://localhost:${process.env.PORT || 3000}/restaurants`;
+  url = 'http://localhost:3000/restaurants';
 
   constructor(private http: HttpClient) { }
 

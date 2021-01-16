@@ -11,6 +11,7 @@
         "frontend": "node frontend.js",
         "server": "node server.js",
         "json-server": "./node_modules/.bin/json-server --watch ./src/db.json",
+        "development": "concurrently --kill-others \"npm run serve\" \"npm run server\"",
         "start": "concurrently --kill-others \"npm run frontend\" \"npm run server\""
     },
     "private": true,
