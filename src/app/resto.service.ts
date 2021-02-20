@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class RestoService {
-  url = 'http://localhost:3000/restaurants';
+  url = 'https://resto-server-rajat.herokuapp.com/restaurants';
 
   constructor(private http: HttpClient) { }
 
